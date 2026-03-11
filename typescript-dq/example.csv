@@ -1,0 +1,5 @@
+order_id,order_ts,product_id,customer_id,quantity,unit_price,currency,rate_to_usd,revenue_usd
+1001,2024-07-25T10:00:00Z,501,201,2,50,USD,1,100
+1002,2024-07-25T11:00:00Z,502,202,1,80,EUR,1.08,86.4
+1003,2024-07-25T12:00:00Z,503,203,3,20,GBP,1.27,76.2
+1004,2024-07-25T13:00:00Z,504,204,0,15,USD,1,0
