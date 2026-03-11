@@ -205,3 +205,36 @@ This is a 5-hour challenge. Suggested time allocation:
 - **30 minutes**: Documentation and dashboard mockup
 
 Good luck with your data engineering challenge! 🚀
+
+
+# Candidate Solution (Hellen C. dos Reis)
+
+My solution includes:
+
+## Deliverables
+- `airflow/dags/ecommerce_pipeline.py`: ETL pipeline implementation
+- `warehouse/schema.sql`: dimensional warehouse schema
+- `design_process.md`: design decisions and trade-offs
+- `dashboard_mockup.md`: dashboard proposal
+
+### Solution Notes
+I implemented a star schema focused on analytics, with:
+- `dim_customer`
+- `dim_product`
+- `dim_date`
+- `fact_sales`
+
+The fact table is modeled at order-item grain to support product-level sales analysis.
+
+Revenue is normalized to USD using the currency API so product performance can be compared across markets.
+
+### Local Execution Note
+I prepared the solution to run within the provided Airflow/PostgreSQL setup.  
+However, due to a local Docker mount permission restriction on my machine, I prioritized delivering the full warehouse design, DAG implementation, and documentation within the challenge time-box.
+
+### Future Improvements
+- incremental loading
+- automated data quality checks
+- test coverage
+- retry/caching strategy for currency API
+- dashboard implementation in BI tool
